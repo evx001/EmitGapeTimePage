@@ -20,7 +20,7 @@ namespace EmitGape
 					Text = "What time is it?",
 					HorizontalOptions = LayoutOptions.CenterAndExpand,
 					VerticalOptions = LayoutOptions.CenterAndExpand,
-					Command = new Command (() => MainPage.Navigation.PushAsync (new TimePage ())),
+					//			Command = new Command (() => MainPage.Navigation.PushAsync (new TimePage ())),
 				},
 			});
 		}
