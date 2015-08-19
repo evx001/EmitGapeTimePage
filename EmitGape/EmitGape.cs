@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 using Xamarin.Forms;
 
 namespace EmitGape
@@ -20,7 +22,7 @@ namespace EmitGape
 					Text = "What time is it?",
 					HorizontalOptions = LayoutOptions.CenterAndExpand,
 					VerticalOptions = LayoutOptions.CenterAndExpand,
-					//			Command = new Command (() => MainPage.Navigation.PushAsync (new TimePage ())),
+					Command = new Command (() => MainPage.Navigation.PushAsync (new TimePage ())),
 				},
 			});
 		}
@@ -32,12 +34,12 @@ namespace EmitGape
 		//
 		//		}
 
-		readonly Label timeLabel = new Label {
-			Text = "Loading...",
-			HorizontalOptions = LayoutOptions.CenterAndExpand,
-			VerticalOptions = LayoutOptions.CenterAndExpand,
-
-		};
+//		readonly Label timeLabel = new Label {
+//			Text = "Loading...",
+//			HorizontalOptions = LayoutOptions.CenterAndExpand,
+//			VerticalOptions = LayoutOptions.CenterAndExpand,
+//
+//		};
 
 
 		
